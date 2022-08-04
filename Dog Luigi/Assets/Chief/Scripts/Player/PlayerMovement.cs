@@ -11,6 +11,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    public Animator animator;
+    public string currentAnimation;
+    public string currentState;
+
+
+    //AnimationStates
+    const string PLAYER_IDLE = "Player_IdleAN";
+    const string PLAYER_RUN = "Player_RunAN";
+    const string PLAYER_JUMP = "Player_JumpAN";
   
 
  
@@ -27,6 +37,24 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5F);
         }
 
+
+        if (IsGrounded())
+        {
+            if (rb.velocity.x != 0)
+            {
+                ChangeAnimationState(PLAYER_RUN);
+            }
+            else
+            {
+                ChangeAnimationState(PLAYER_IDLE);
+            }
+        }
+
+        if(IsGrounded() == false)
+        {
+            ChangeAnimationState(PLAYER_JUMP);
+        }
+
         Flip();
     }
 
@@ -34,7 +62,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
-        
     }
 
     private bool IsGrounded()
@@ -51,5 +78,12 @@ public class PlayerMovement : MonoBehaviour
             localscale.x *= -1;
             transform.localScale = localscale;
         }
+    }
+
+
+    public void ChangeAnimationState(string newState)
+    {
+        if (currentAnimation == newState) return;
+        animator.Play(newState);
     }
 }
