@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+   public Transform endPoint;
+
+    Transform thisTransform;
+
+    public bool go = false;
+
+    public float timeToMove;
+
+    private void Start()
     {
-        
+        thisTransform = this.gameObject.transform;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        if(go == true)
+        {
+            Vector3 a = thisTransform.position;
+            Vector3 b = endPoint.position;
+            thisTransform.position = Vector3.Lerp(a, b, timeToMove);
+        }
+       
     }
+
+
+    public void MovePlatformUp()
+    {
+        go = true;
+    }
+    
 }
