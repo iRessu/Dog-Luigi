@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69acfcc18ccaa6e41bb9b26dee84f5dd
+guid: e2e1dc5f729ee5145bdd73924e1be8f9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pedobear_0
+      name: buskar_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1
-        width: 38
-        height: 63
+        x: 22
+        y: 51
+        width: 31
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbc40f046856c954eb3b91931f3fdde2
-      internalID: -1525081554
+      spriteID: 3bbb07186c347954ab6793184403b28c
+      internalID: 1797517887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pedobear_1
+      name: buskar_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1
-        width: 40
-        height: 63
+        x: 4
+        y: 31
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,8 +139,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fa0f9c37f23d034aa72f7e5d6321d60
-      internalID: 1392422288
+      spriteID: 0bdcd23b25980e34a8576ec3d3d027dd
+      internalID: -1024566323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buskar_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f271250dee1bcb45a3b18c60a2e2ff8
+      internalID: -1094850460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buskar_3
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 15
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2988bbcd4e58db048b0fb1083e3451e7
+      internalID: 927235285
       vertices: []
       indices: 
       edges: []
@@ -156,8 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pedobear_1: 1392422288
-      pedobear_0: -1525081554
+      buskar_1: -1024566323
+      buskar_0: 1797517887
+      buskar_3: 927235285
+      buskar_2: -1094850460
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
