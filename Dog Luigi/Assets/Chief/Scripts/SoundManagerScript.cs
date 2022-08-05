@@ -11,7 +11,7 @@ public class SoundManagerScript : MonoBehaviour
 
     void Start()
     {
-        jumpSFX = Resources.Load<AudioClip>("JumpSFX");
+        jumpSFX = Resources.Load<AudioClip>("SFX/JumpSFX");
         audioSrc = GetComponent<AudioSource>();
     }
 
@@ -19,7 +19,7 @@ public class SoundManagerScript : MonoBehaviour
     {
         switch(Clip)
             {
-            case "JumpSFX":
+            case "jumpSFX":
                 audioSrc.PlayOneShot(jumpSFX);
                 break;
         }
