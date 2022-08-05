@@ -17,6 +17,6 @@ public class SoundManagerScript : MonoBehaviour
 
     public static void PlaySound()
     {
-        audioSrc.PlayOneShot(jumpSFX);          
+        audioSrc.PlayOneShot(jumpSFX);
     }
 }
