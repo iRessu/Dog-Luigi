@@ -9,7 +9,7 @@ public class DoorPressurePlate : MonoBehaviour
     private float timer;
     private void Awake ()
     {
-        door = doorGameObject.GetComponent< DoorFunctions>();
+        door = doorGameObject.GetComponent<DoorFunctions>();
     }
 
     private void Update()
