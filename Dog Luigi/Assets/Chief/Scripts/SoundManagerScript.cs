@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip jumpSFX;
+    public static AudioClip jumpSFX, pauseOn, pauseOff;
     static AudioSource audioSrc;
 
     
 
     void Start()
     {
+        pauseOn = Resources.Load<AudioClip>("PauseOn");
+        pauseOff = Resources.Load<AudioClip>("PauseOff");
         jumpSFX = Resources.Load<AudioClip>("JumpSFX");
         audioSrc = GetComponent<AudioSource>();
     }
 
-    public static void PlaySound()
+    public static void PlayJumpSound()
     {
-        audioSrc.PlayOneShot(jumpSFX);
+        audioSrc.PlayOneShot(jumpSFX);  
     }
+
+    public static void PlayPauseOn()
+    {
+        audioSrc.PlayOneShot(pauseOn);
+    }
+    
+
 }

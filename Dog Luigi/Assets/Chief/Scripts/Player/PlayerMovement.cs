@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            SoundManagerScript.PlaySound();
+            SoundManagerScript.PlayJumpSound();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
