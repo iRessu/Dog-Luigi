@@ -5,11 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class SceneTrans : MonoBehaviour
 {
-    public Animator transitionAnim;
+    
     public string sceneName;
+    public PlayerMovement Player;
 
-    void Update()
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Player.gameOver = true;
+        Invoke("LoadScene", 2);
+    }
+
+    void LoadScene()
     {
         
+       
+        SceneManager.LoadScene(sceneName);
     }
 }

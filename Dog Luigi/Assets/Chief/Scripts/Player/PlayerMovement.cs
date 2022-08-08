@@ -22,48 +22,63 @@ public class PlayerMovement : MonoBehaviour
     const string PLAYER_RUN = "Player_RunAN";
     const string PLAYER_JUMP = "Player_JumpAN";
     const string PLAYER_VICTORY = "Player_VictoryAN";
-  
 
+    public bool gameOver = false;
  
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (gameOver == false) 
         {
-            SoundManagerScript.PlayJumpSound();
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        }
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5F);
-        }
+            horizontal = Input.GetAxis("Horizontal");
 
-
-        if (IsGrounded())
-        {
-            if (rb.velocity.x != 0)
+            if (Input.GetButtonDown("Jump") && IsGrounded())
             {
-                ChangeAnimationState(PLAYER_RUN);
+                SoundManagerScript.PlayJumpSound();
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }
-            else
+            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
             {
-                ChangeAnimationState(PLAYER_IDLE);
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5F);
             }
-        }
 
-        if(IsGrounded() == false)
+
+            if (IsGrounded())
+            {
+                if (rb.velocity.x != 0)
+                {
+                    ChangeAnimationState(PLAYER_RUN);
+                }
+                else
+                {
+                    ChangeAnimationState(PLAYER_IDLE);
+                }
+            }
+
+            if (IsGrounded() == false)
+            {
+                ChangeAnimationState(PLAYER_JUMP);
+            }
+
+            Flip();
+
+
+
+
+        }
+        if(gameOver == true)
         {
-            ChangeAnimationState(PLAYER_JUMP);
+            Victory();
         }
-
-        Flip();
+        
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-
+        if(gameOver == false)
+        {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
+       
     }
 
     private bool IsGrounded()
@@ -92,5 +107,6 @@ public class PlayerMovement : MonoBehaviour
     public void Victory()
     {
         ChangeAnimationState(PLAYER_VICTORY);
+        rb.velocity = new Vector2(0, 0);
     }
 }
