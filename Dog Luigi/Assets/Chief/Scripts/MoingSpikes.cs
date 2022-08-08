@@ -23,7 +23,7 @@ public class MoingSpikes : MonoBehaviour
         if (first == true)
         {
             MoveRight();
-            Invoke("flynowbool", 2);
+            Invoke("flynowbool", 1);
         }
         if(first == false && flynow == true)
         {
