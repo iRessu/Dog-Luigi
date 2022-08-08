@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     const string PLAYER_IDLE = "Player_IdleAN";
     const string PLAYER_RUN = "Player_RunAN";
     const string PLAYER_JUMP = "Player_JumpAN";
+    const string PLAYER_VICTORY = "Player_VictoryAN";
   
 
  
@@ -86,5 +87,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (currentAnimation == newState) return;
          animator.Play(newState);
+    }
+
+    public void Victory()
+    {
+        ChangeAnimationState(PLAYER_VICTORY);
     }
 }
