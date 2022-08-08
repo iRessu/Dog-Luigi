@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip jumpSFX, pauseOn, pauseOff, victorySFX;
+    public static AudioClip jumpSFX, pauseOn, pauseOff, victorySFX, BGM;
     static AudioSource audioSrc;
 
     
+    
+
 
     void Start()
     {
@@ -15,8 +17,12 @@ public class SoundManagerScript : MonoBehaviour
         pauseOff = Resources.Load<AudioClip>("PauseOff");
         jumpSFX = Resources.Load<AudioClip>("JumpSFX");
         victorySFX = Resources.Load<AudioClip>("VictorySFX");
+        
         audioSrc = GetComponent<AudioSource>();
+
     }
+
+    
 
     public static void PlayJumpSound()
     {
