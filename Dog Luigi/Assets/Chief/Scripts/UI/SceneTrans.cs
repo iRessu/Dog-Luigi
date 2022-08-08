@@ -13,13 +13,12 @@ public class SceneTrans : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Player.gameOver = true;
+        SoundManagerScript.VictorySound();
         Invoke("LoadScene", 6);
     }
 
     void LoadScene()
     {
-
-        SoundManagerScript.VictorySound();
         SceneManager.LoadScene(sceneName);
     }
 }
