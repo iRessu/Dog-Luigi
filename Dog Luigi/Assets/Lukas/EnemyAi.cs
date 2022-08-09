@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAi : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject Player;
     private Transform playerPos;
     private Vector2 currentPos;
     public float distance;
@@ -12,9 +12,9 @@ public class EnemyAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerPos = player.GetComponent<Transform>();
+        playerPos = Player.GetComponent<Transform>();
         currentPos =GetComponent<Transform>().position;
-        player = FindObjectOfType<PlayerMovement>().gameObject;
+        Player = FindObjectOfType<PlayerMovement>().gameObject;
     }
 
     // Update is called once per frame
