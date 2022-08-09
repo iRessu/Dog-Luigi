@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 942669556203601357}
   - component: {fileID: 942669556203601358}
   - component: {fileID: 942669556203601392}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PHButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 942669557166430312}
   - component: {fileID: 942669557166430313}
   - component: {fileID: 942669557166430310}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: PlatformPH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ Transform:
   m_GameObject: {fileID: 942669557166430314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.91, y: -7.96, z: 0}
-  m_LocalScale: {x: 3.47, y: 0.52, z: 1}
+  m_LocalScale: {x: 0.95, y: 0.52, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 942669556203601356}
@@ -215,7 +215,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8206411abfe91114f9e81060e1705887, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -254,16 +254,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00329417, y: 0.15454164}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    border: {x: 0, y: 1.4545455, z: 0, w: 1.0909091}
+    pivot: {x: 0.49679968, y: 0.4871991}
+    oldSize: {x: 2.909091, y: 2.909091}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.8740277, y: 0.47455752}
   m_EdgeRadius: 0
