@@ -14,6 +14,7 @@ public class EnemyAi : MonoBehaviour
     {
         playerPos = player.GetComponent<Transform>();
         currentPos =GetComponent<Transform>().position;
+        player = FindObjectOfType<PlayerMovement>().gameObject;
     }
 
     // Update is called once per frame
@@ -25,7 +26,14 @@ public class EnemyAi : MonoBehaviour
         }
         else
         {
+            if (Vector2.Distance(transform.position, currentPos)<=0)
+            {
 
+            }
+            else
+            {
+                transform.position = Vector2.MoveTowards(transform.position, currentPos, speedEnemy * Time.deltaTime);
+            }
         }
     }
 }
