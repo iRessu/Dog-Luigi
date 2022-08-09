@@ -9,20 +9,18 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    SoundManagerScript soundhandler;
+
+    bool hasplayed = false;
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && hasplayed == false)
         {
-            SoundManagerScript.PlayPauseOn();
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            SoundManagerScript.PlayPauseOn();          
+            Pause();
+            hasplayed = true;
         }
     }
 
@@ -51,5 +49,10 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Quit game");
         Application.Quit();
+    }
+
+    public void canPause()
+    {
+        hasplayed = false;
     }
 }

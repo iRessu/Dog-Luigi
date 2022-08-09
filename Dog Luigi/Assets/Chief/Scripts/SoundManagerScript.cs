@@ -4,19 +4,29 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip jumpSFX, pauseOn, pauseOff, victorySFX;
+    public static AudioClip jumpSFX, pauseOn, victorySFX, BGM;
     static AudioSource audioSrc;
 
-    
+
+   public static GameObject Bgm;
+
 
     void Start()
     {
+        
+
         pauseOn = Resources.Load<AudioClip>("PauseOn");
-        pauseOff = Resources.Load<AudioClip>("PauseOff");
         jumpSFX = Resources.Load<AudioClip>("JumpSFX");
         victorySFX = Resources.Load<AudioClip>("VictorySFX");
+        
+        
         audioSrc = GetComponent<AudioSource>();
+
+        Bgm = GameObject.FindWithTag("BGM");
+       
     }
+
+  
 
     public static void PlayJumpSound()
     {
@@ -25,11 +35,14 @@ public class SoundManagerScript : MonoBehaviour
 
     public static void PlayPauseOn()
     {
+        Bgm.SetActive(false);
         audioSrc.PlayOneShot(pauseOn);
+        
     }
 
     public static void VictorySound()
     {
+        Bgm.SetActive(false);
         audioSrc.PlayOneShot(victorySFX);
     }
     
