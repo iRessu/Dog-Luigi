@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3820041137018912552}
   - component: {fileID: 3820041137018912559}
   - component: {fileID: 3820041137018912558}
-  - component: {fileID: 3820041137018912557}
   - component: {fileID: 3820041137018912554}
+  - component: {fileID: 782227135}
   m_Layer: 0
   m_Name: PBear
   m_TagString: Untagged
@@ -135,21 +135,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.375, y: 3.9375}
   m_EdgeRadius: 0
---- !u!114 &3820041137018912557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3820041137018912556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185bc6329c28d5a4f9d8643c6286180f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  agroRange: 5
-  moveSpeed: 8.5
 --- !u!95 &3820041137018912554
 Animator:
   serializedVersion: 4
@@ -170,3 +155,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &782227135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820041137018912556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e23585d0f0253b4c98b76f98029fb7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  agroRange: 4
+  moveSpeed: 8.5
