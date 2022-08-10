@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class EnemyAi : MonoBehaviour
 {
-
-
-    public float speed;
-    public float stoppingDistance;
-
-    private Transform target;
-
-    private void Start()
+    public GameObject Player;
+    private Transform playerPos;
+    private Vector2 currentPos;
+    public float distance;
+    public float speedEnemy;
+    // Start is called before the first frame update
+    void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        playerPos = Player.GetComponent<Transform>();
+        currentPos =GetComponent<Transform>().position;
+        Player = FindObjectOfType<PlayerMovement>().gameObject;
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if(Vector2.Distance(transform.position, target.position) > stoppingDistance)
+        if (Vector2.Distance(transform.position, playerPos.position) < distance)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, playerPos.position, speedEnemy * Time.deltaTime);
+        }
+        else
+        {
+            if (Vector2.Distance(transform.position, currentPos)<=0)
+            {
+
+            }
+            else
+            {
+                transform.position = Vector2.MoveTowards(transform.position, currentPos, speedEnemy * Time.deltaTime);
+            }
         }
     }
 }
