@@ -11,6 +11,7 @@ public class MoingSpikes : MonoBehaviour
    
 
     [SerializeField] float movingSpeed;
+    public float range;
     
    
     void Start()
@@ -23,7 +24,7 @@ public class MoingSpikes : MonoBehaviour
         if (first == true)
         {
             MoveRight();
-            Invoke("flynowbool", 1);
+            Invoke("flynowbool", range);
         }
         if(first == false && flynow == true)
         {
