@@ -335,6 +335,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 520900027}
     - target: {fileID: 782227135, guid: cb6918b49d4aaa549b49b16b3b5c867b, type: 3}
+      propertyPath: agroRange
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 782227135, guid: cb6918b49d4aaa549b49b16b3b5c867b, type: 3}
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
@@ -3145,6 +3149,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 520900027}
+    - target: {fileID: 782227135, guid: cb6918b49d4aaa549b49b16b3b5c867b, type: 3}
+      propertyPath: agroRange
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 782227135, guid: cb6918b49d4aaa549b49b16b3b5c867b, type: 3}
       propertyPath: moveSpeed
       value: 6
