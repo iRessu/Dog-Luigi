@@ -12,14 +12,22 @@ public class EnemyHealth : MonoBehaviour
         Hitpoints = MaxHitpoints;
     }
 
+    
+
     public void TakeHit(float Damage)
     {
         Hitpoints -= Damage;
         if (Hitpoints<=0)
-        {
-
-            var enemy = Collision.collider.GetComponent<EnemyAgro>();
+        { 
             Destroy(gameObject);
+        }
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        var enemy = collision.collider.GetComponent<EnemyAgro>();
+        if (enemy)
+        {
+            
         }
     }
 }
