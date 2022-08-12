@@ -1900,11 +1900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.1
+      value: -26.08
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.75
+      value: -2.61
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2079,11 +2079,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6799135972223252417, guid: 1cd2531e550271c43bdfeb577b74a56f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.6
+      value: -19.84
       objectReference: {fileID: 0}
     - target: {fileID: 6799135972223252417, guid: 1cd2531e550271c43bdfeb577b74a56f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04
+      value: -3.17
       objectReference: {fileID: 0}
     - target: {fileID: 6799135972223252417, guid: 1cd2531e550271c43bdfeb577b74a56f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2120,14 +2120,6 @@ PrefabInstance:
     - target: {fileID: 6799135972223252419, guid: 1cd2531e550271c43bdfeb577b74a56f, type: 3}
       propertyPath: m_Name
       value: Spikes
-      objectReference: {fileID: 0}
-    - target: {fileID: 6799135972223252478, guid: 1cd2531e550271c43bdfeb577b74a56f, type: 3}
-      propertyPath: range
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6799135972223252478, guid: 1cd2531e550271c43bdfeb577b74a56f, type: 3}
-      propertyPath: movingSpeed
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd2531e550271c43bdfeb577b74a56f, type: 3}
