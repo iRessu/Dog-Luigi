@@ -343,6 +343,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &484035594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 484035594, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+  m_PrefabInstance: {fileID: 4163469640635863192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &484035599
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484035594}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6615e65d86515504796a9283497a0736, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &584385167 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3879855437294068414, guid: a49ca4892d2cc884a800e48b73d221e0, type: 3}
@@ -826,6 +851,31 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1283360286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1283360286, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+  m_PrefabInstance: {fileID: 4163469640635863192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1283360290
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283360286}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f02999e23f8d864284a23a8bf1d16a0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1340949494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
@@ -1808,6 +1858,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1283360287, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 484.25415
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283360287, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 710
+      objectReference: {fileID: 0}
     - target: {fileID: 4163469640170725312, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
       propertyPath: m_Name
       value: PauseMenu
@@ -1900,7 +1958,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 904772950}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 498339809, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+    - {fileID: 484035596, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
 --- !u!1001 &4676085206836715703
 PrefabInstance:
