@@ -2282,7 +2282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8712045026729289795, guid: 632366b5794d97a4a81b3ba9aad56d5b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.43
+      value: 19.21
       objectReference: {fileID: 0}
     - target: {fileID: 8712045026729289795, guid: 632366b5794d97a4a81b3ba9aad56d5b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3177,6 +3177,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6602389340892267308, guid: abebd637b513b654289dbe50426fb46d, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6602389341278174951, guid: abebd637b513b654289dbe50426fb46d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17
@@ -3292,7 +3296,7 @@ PrefabInstance:
       objectReference: {fileID: 520900027}
     - target: {fileID: 782227135, guid: cb6918b49d4aaa549b49b16b3b5c867b, type: 3}
       propertyPath: agroRange
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 782227135, guid: cb6918b49d4aaa549b49b16b3b5c867b, type: 3}
       propertyPath: moveSpeed
@@ -5930,6 +5934,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1743273319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6602389340892267302, guid: abebd637b513b654289dbe50426fb46d, type: 3}
+  m_PrefabInstance: {fileID: 875132476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &1743273325
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743273319}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1746404527
 GameObject:
   m_ObjectHideFlags: 0
