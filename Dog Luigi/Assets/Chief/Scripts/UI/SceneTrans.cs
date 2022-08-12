@@ -15,7 +15,8 @@ public class SceneTrans : MonoBehaviour
     private void Start()
     {
         LoadScreen = GameObject.FindWithTag("Image");
-        LoadScreen.gameObject.SetActive(false);
+        LoadScreen.SetActive(false);
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -33,6 +34,6 @@ public class SceneTrans : MonoBehaviour
 
     void LoadsScreen()
     {
-        LoadScreen.gameObject.SetActive(true);
+        LoadScreen.SetActive(true);
     }
 }
