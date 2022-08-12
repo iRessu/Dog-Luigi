@@ -10,10 +10,11 @@ public class SceneTrans : MonoBehaviour
     public string sceneName;
     public PlayerMovement Player;
 
-    public Image LoadScreen;
+    GameObject LoadScreen;
 
     private void Start()
     {
+        LoadScreen = GameObject.FindWithTag("Image");
         LoadScreen.gameObject.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
