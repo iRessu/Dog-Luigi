@@ -2957,6 +2957,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 343653010, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+<<<<<<< HEAD
+=======
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 343653010, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+>>>>>>> 7f3bf07e810b1908d5bf00fdd22650628695a6c8
       propertyPath: m_TagString
       value: ImageCont
       objectReference: {fileID: 0}
@@ -3540,11 +3547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -67
+      value: -67.76
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3
+      value: -2.23
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.z
