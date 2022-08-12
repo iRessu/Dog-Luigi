@@ -11,10 +11,13 @@ public class SceneTrans : MonoBehaviour
     public PlayerMovement Player;
 
     GameObject LoadScreen;
+    GameObject LoadScreenContainer;
 
     private void Start()
     {
+        LoadScreenContainer = GameObject.FindWithTag("ImageCont");
         LoadScreen = GameObject.FindWithTag("Image");
+        LoadScreenContainer.SetActive(false);
         LoadScreen.SetActive(false);
 
     }
@@ -34,6 +37,7 @@ public class SceneTrans : MonoBehaviour
 
     void LoadsScreen()
     {
+        LoadScreenContainer.SetActive(true);
         LoadScreen.SetActive(true);
     }
 }

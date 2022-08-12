@@ -1809,6 +1809,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 343653010, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 343653010, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+      propertyPath: m_TagString
+      value: ImageCont
+      objectReference: {fileID: 0}
+    - target: {fileID: 343653012, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283360286, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
       propertyPath: m_TagString
       value: Image
       objectReference: {fileID: 0}
@@ -2039,6 +2051,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 630341110}
+    - target: {fileID: 6322834758716009626, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
+      propertyPath: sceneName
+      value: Scen1
+      objectReference: {fileID: 0}
     - target: {fileID: 6322834758716009626, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
       propertyPath: LoadScreen
       value: 
