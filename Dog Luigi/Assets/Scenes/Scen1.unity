@@ -558,6 +558,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 343653010, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4163469640170725312, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
       propertyPath: m_Name
       value: PauseMenu
@@ -2473,11 +2477,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -45.67
+      value: -45.63
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.08
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 5272136147015174571, guid: 548099f320f37e348bfc334985c71402, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2741,6 +2745,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: Scen 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6322834758716009626, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
+      propertyPath: LoadScreen
+      value: 
+      objectReference: {fileID: 1672989138}
     - target: {fileID: 6322834758716009629, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -14628,6 +14636,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa746baa9890b734f97c4a8387be0d3d, type: 3}
+--- !u!114 &1672989138 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 343653012, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+  m_PrefabInstance: {fileID: 244362420}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1682527364 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3879855437294068414, guid: a49ca4892d2cc884a800e48b73d221e0, type: 3}
@@ -14821,6 +14840,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: Scen 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6322834758716009626, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
+      propertyPath: LoadScreen
+      value: 
+      objectReference: {fileID: 1672989138}
     - target: {fileID: 6322834758716009629, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
       propertyPath: m_RootOrder
       value: 14
