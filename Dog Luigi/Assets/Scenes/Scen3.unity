@@ -2274,6 +2274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneTrans
       objectReference: {fileID: 0}
+    - target: {fileID: 6322834758716009624, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
+      propertyPath: m_TagString
+      value: ImageCont
+      objectReference: {fileID: 0}
     - target: {fileID: 6322834758716009626, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
       propertyPath: Player
       value: 
