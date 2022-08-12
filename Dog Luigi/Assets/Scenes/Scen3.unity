@@ -153,6 +153,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: Scen4
       objectReference: {fileID: 0}
+    - target: {fileID: 6322834758716009626, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
+      propertyPath: LoadScreen
+      value: 
+      objectReference: {fileID: 416825865}
     - target: {fileID: 6322834758716009629, guid: cda947d4f7b687345ab4a8d38263e567, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -791,6 +795,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416825865 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 343653012, guid: 51d1cc29be0d0d74a810fd92069ef351, type: 3}
+  m_PrefabInstance: {fileID: 861047509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &449956937
 GameObject:
   m_ObjectHideFlags: 0
