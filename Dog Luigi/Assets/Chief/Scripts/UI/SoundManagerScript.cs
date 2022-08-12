@@ -32,7 +32,7 @@ public class SoundManagerScript : MonoBehaviour
 
     public static void PlayJumpSound()
     {
-        audioSrc.PlayOneShot(jumpSFX);
+        audioSrc.PlayOneShot(jumpSFX, 0.4f);
     }
 
     public static void PlayPauseOn()
