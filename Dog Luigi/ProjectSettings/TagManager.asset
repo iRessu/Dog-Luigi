@@ -8,11 +8,7 @@ TagManager:
   - BGM
   - BOX
   - Image
-<<<<<<< Updated upstream
   - ImageCont
-=======
-  - LoadingCont
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
