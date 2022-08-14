@@ -50,7 +50,7 @@ public class SoundManagerScript : MonoBehaviour
     
     public static void ItemFound()
     {
-        audioSrc.PlayOneShot(itemFound);
+        audioSrc.PlayOneShot(itemFound, 0.6f);
     }
 
     public static void ItemBoxSound()
